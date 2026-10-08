@@ -64,6 +64,17 @@
     text-shadow: 2px 2px 0 #ffd54f;
   }
   .prank-emoji { font-size: 60px; margin-bottom: 12px; }
+  .confess {
+    margin-top: 24px;
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 900;
+    color: #fff;
+    background: #d32f2f;
+    padding: 12px 26px;
+    border-radius: 999px;
+    box-shadow: 0 6px 16px rgba(211,47,47,.4);
+  }
 
   .gallery {
     display: grid;
@@ -110,7 +121,8 @@
     if (name === TARGET) {
       box.innerHTML =
         '<div class="prank-emoji">🤣🤣🤣</div>' +
-        '<div class="prank-text">哈哈哈<br>傻逼</div>';
+        '<div class="prank-text">哈哈哈<br>傻逼</div>' +
+        '<div><span class="confess">我竟然是日本人</span></div>';
     } else {
       const images = IMAGES
         .map(p => '<img src="' + p + '" alt="美女图片" loading="lazy">')
